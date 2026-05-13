@@ -1,0 +1,14 @@
+CS9635 — CUDA Benchmark Results
+
+Benchmark    | Input Size           | Avg Time (s)
+-------------|----------------------|-------------
+backprop     | 4096 neurons         | 58.05
+nw           | 2048x2048 matrix     | 10.18
+pathfinder   | 100000x100 grid      | 59.77
+srad         | 502x458, 100 iter    | 48.24
+
+Notes:
+- hotspot: exceeded 5 min/run, excluded (GPU contention on shared server)
+- myocyte: exceeded 5 min/run, excluded (GPU contention on shared server)
+- Timing method: Linux bash time built-in (wall-clock)
+- Nsight Compute returned ERR_NVGPUCTRPERM — GPU counters unavailable

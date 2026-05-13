@@ -1,0 +1,13 @@
+CS9635 — OpenMP Thread Scaling Study
+Benchmark: NW (Needleman-Wunsch), Rodinia 3.1
+Input: 4096x4096 scoring matrix, penalty=10
+Parallel Efficiency = Speedup / Thread Count
+
+
+Threads | Time (s) | Speedup | Parallel Efficiency
+--------|----------|---------|--------------------
+1       | 0.248    | 1.00x   | 1.00
+2       | 0.166    | 1.49x   | 0.75
+4       | 0.131    | 1.89x   | 0.47
+8       | 0.127    | 1.95x   | 0.24
+16      | 0.127    | 1.95x   | 0.12

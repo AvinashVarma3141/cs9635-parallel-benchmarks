@@ -1,0 +1,13 @@
+CS9635 — MPI Benchmark Results
+MPI: OpenMPI 4.1.2
+NPB Version: 3.4.2, Class S
+
+
+Benchmark | Mop/s   | Time (s) | Communication Pattern
+----------|---------|----------|----------------------
+FT        | 6999.29 | 0.03     | Regular 1D slab
+LU        | 2829.93 | 0.04     | Structured pipeline
+MG        |  827.02 | 0.01     | V-cycle exchange
+CG        |  812.81 | 0.08     | Sparse halo exchange
+EP        |  384.62 | 0.09     | Single MPI_Reduce
+IS        |  117.59 | 0.01     | All-to-all O(P^2)

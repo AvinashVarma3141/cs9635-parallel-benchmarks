@@ -1,0 +1,10 @@
+CS9635 — MPI Process Scaling 
+Benchmark: CG (Conjugate Gradient), NPB 3.4.2 Class S
+
+
+Processes | Mop/s   | Time (s) | Notes
+----------|---------|----------|------
+1         | 2129.29 | 0.03     | Baseline — all local, no communication
+2         | 1024.90 | 0.07     | Communication overhead > computation
+4         |  853.99 | 0.08     | Further degradation at Class S scale
+8         | 2048.06 | 0.03     | Recovery — NUMA-aware socket placement

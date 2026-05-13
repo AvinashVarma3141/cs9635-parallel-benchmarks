@@ -1,0 +1,11 @@
+CS9635 — OpenMP CPU Utilization
+Tool: perf stat (task-clock, CPUs utilized)
+
+
+Benchmark  | CPUs Utilized | Efficiency | Bottleneck
+-----------|---------------|------------|---------------------------
+srad       | 6.79 / 16     | 42%        | Good 2D spatial decomposition
+nw         | 5.93 / 16     | 37%        | Anti-diagonal wavefront limit
+pathfinder | 1.69 / 16     | 11%        | Sequential row dependency
+backprop   | 1.99 / 16     | 12%        | Short parallel sections
+hotspot    | 1.07 / 16     |  7%        | Coarse-grained OpenMP regions

@@ -1,0 +1,8 @@
+--- a/common/make.config
++++ b/common/make.config
+@@ -1,4 +1,4 @@
+-CUDA_DIR = /usr/local/cuda
++CUDA_DIR = /usr
+ 
+ # CUDA toolkit libraries
+ CUDA_LIB_DIR := $(CUDA_DIR)/lib64
